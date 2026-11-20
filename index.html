@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkinnyDog GNU/Linux — Rescue Live OS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="brand">SkinnyDog <span>GNU/Linux</span></div>
+    <div class="lang-switch">
+      <button onclick="setLang('en')" id="btn-en">EN</button>
+      <button onclick="setLang('uk')" id="btn-uk">UA</button>
+      <button onclick="setLang('ru')" id="btn-ru" class="active">RU</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <img src="logo.png" alt="SkinnyDog Logo" class="hero-logo">
+      <h1 data-i18n="title">Спасательный Live-дистрибутив в оперативной памяти</h1>
+      <p class="subtitle" data-i18n="subtitle">
+        На базе свежей Fedora. Загружается целиком в RAM, работает без флешки и заряжен инструментами для ремонта ПК, дисков и смартфонов.
+      </p>
+      <div class="badges">
+        <span>Kernel 7.x / Latest</span>
+        <span>100% Live RAM</span>
+        <span>Xfce Desktop</span>
+        <span>Monthly Updates</span>
+      </div>
+    </section>
+
+    <section class="editions">
+      <div class="card">
+        <div class="card-tag">RECOMMENDED</div>
+        <h2>SkinnyDog Standard</h2>
+        <p data-i18n="std_desc">
+          Полная версия для любого современного и старого железа. Включает проприетарные драйверы и linux-firmware (Wi-Fi, GPU, NVMe) для мгновенного запуска из коробки.
+        </p>
+        <ul>
+          <li>GParted, TestDisk, ddrescue, Clonezilla</li>
+          <li>ADB, Fastboot, flashrom, chntpw</li>
+          <li>Btrfs, NTFS, exFAT, LVM, LUKS</li>
+        </ul>
+        <a href="#download-std" class="btn btn-primary" data-i18n="dl_std">Скачать ISO (v0.1 Alpha)</a>
+      </div>
+
+      <div class="card card-libre">
+        <div class="card-tag libre-tag">100% FREE SOFTWARE</div>
+        <h2>SkinnyDog Libre</h2>
+        <p data-i18n="libre_desc">
+          Редакция без проприетарных блобов и несвободной прошивки. Создана для сторонников философии GNU и максимально чистого свободного софта.
+        </p>
+        <ul>
+          <li>Только свободные пакеты и драйверы</li>
+          <li>Полный набор утилит спасения данных</li>
+          <li>Загрузка в RAM (rd.live.ram=1)</li>
+        </ul>
+        <a href="#download-libre" class="btn btn-secondary" data-i18n="dl_libre">Скачать Libre ISO (v0.1 Alpha)</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>SkinnyDog Project &copy; 2026 &bull; Built by danikbtw</p>
+  </footer>
+
+  <script src="lang.js"></script>
+</body>
+</html>
